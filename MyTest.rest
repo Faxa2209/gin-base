@@ -1,0 +1,33 @@
+###
+GET http://localhost:8080/people
+###
+# search by id
+GET http://localhost:8080/people/6
+###
+
+# search by title
+GET http://localhost:8080/peopleByName/Fio 
+###
+GET  http://localhost:8080/peopleByLastname/Pot
+###
+
+# add a book
+POST http://localhost:8080/people/
+content-type: application/json
+
+{
+    "FirstName": "Dark",
+    "LastName": "Weider",
+    "City":"Star wars city"
+}
+###
+
+# delete a book by id
+DELETE  http://localhost:8080/people/1
+###
+# gets number of persons in table
+GET http://localhost:8080/peopleNumber
+###
+
+GET  http://localhost:8080/peopleByName2/
+###
